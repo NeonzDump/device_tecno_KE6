@@ -15,3 +15,6 @@ on post-fs
     # (and at post-fs, the fstab has already been used to mount the partitions,
     #  so it is fine to just revert back)
     umount /vendor/etc/fstab.mt6761
+
+on boot
+    setprop init.svc.console stopped
