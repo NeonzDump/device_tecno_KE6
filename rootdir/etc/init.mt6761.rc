@@ -6,6 +6,9 @@ on init
     # We only need it to be overridden before things are mounted
     mount none /system/etc/fstab.mt6761 /vendor/etc/fstab.mt6761 bind
 
+    # Disable vendor overlays
+    mount none /vendor/lost+found /vendor/overlay bind
+
 on post-fs
     # Unmount the overridden fstab because the SELinux label is incorrect
     # and some MTK daemons can crash because of that
