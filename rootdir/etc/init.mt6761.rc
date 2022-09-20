@@ -7,4 +7,8 @@ on init
     mount none /system/etc/fstab.mt6761 /vendor/etc/fstab.mt6761 bind
 
 on post-fs
-    mount none /system/etc/fstab.mt6761 /vendor/etc/fstab.mt6761 bind
+    # Unmount the overridden fstab because the SELinux label is incorrect
+    # and some MTK daemons can crash because of that
+    # (and at post-fs, the fstab has already been used to mount the partitions,
+    #  so it is fine to just revert back)
+    umount /vendor/etc/fstab.mt6761
