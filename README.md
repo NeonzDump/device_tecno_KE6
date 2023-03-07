@@ -1,4 +1,4 @@
-# Android device tree for TECNO TECNO KE6 (TECNO-KE6)
+# Android device tree for TECNO KE6 (TECNO-KE6)
 
 ```
 #

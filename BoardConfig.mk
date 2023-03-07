@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/TECNO-KE6
+DEVICE_PATH := device/tecno/KE6
 
 # Architecture
 TARGET_ARCH := arm
