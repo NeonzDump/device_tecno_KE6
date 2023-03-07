@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.mt6761.rc",
+    src: "etc/init.mt6761.rc",
+    sub_dir: "init",
+}
+
+// fstab
+prebuilt_etc {
+    name: "fstab.mt6761",
+    src: "etc/fstab.mt6761",
+}
